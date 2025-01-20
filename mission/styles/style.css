@@ -14,7 +14,6 @@ div  {
 }
 
 .subtitle {
-    color: #006EB6;
     font-family: "Times New Roman";
     font-size: 20px;
     text-align: center;
@@ -32,6 +31,7 @@ li{
 }
 
 h2 {
+    color: #006EB6;
     margin: 0;
     text-align: left;
     line-height: 125%;
