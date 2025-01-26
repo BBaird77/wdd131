@@ -70,6 +70,8 @@ header {
 footer {
     background-color: #52489c;
     padding: 10px;
+    font-family: (--secondary-font);
+    color: #ebebeb;
 }
 
 .title {
