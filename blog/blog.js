@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("JavaScript loaded correctly");
 
-    // Now that the DOM is ready, we can safely reference the #maincontent element
     const mainContent = document.querySelector("#maincontent");
 
-    // Check if mainContent exists in case of missing or incorrect IDs
     if (!mainContent) {
         console.error("Main content section not found!");
         return;
@@ -43,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ];
 
-    // Loop through the articles array and create HTML elements
     articles.forEach((item) => {
         const articleWrapper = document.createElement("div");
         articleWrapper.classList.add("article-wrapper");
@@ -65,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <p>${item.description} <a href="${item.readMoreLink}">Read More...</a></p>
         `;
 
-        // Append sections to the article wrapper, then append to the main content
         articleWrapper.appendChild(infoSection);
         articleWrapper.appendChild(articleSection);
 
