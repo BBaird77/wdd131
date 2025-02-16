@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Eagle+Lake&family=Italianno&family=Kaushan+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Merienda:wght@300..900&family=Nothing+You+Could+Do&family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial&family=Mooli&display=swap');
 
 :root {
     --primary-color: #ffffff;
@@ -6,73 +6,88 @@
     --accent-color: #f45b69;
     --text-dark: #333;
     --text-light: #ebebeb;
-    --primary-font: Arial, Helvetica,sans-serif;
+    --primary-font: Arial, Helvetica, sans-serif;
     --secondary-font: Mooli, san-serif;
-    }
+}
 
 main {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr; /* Three columns for larger screens */
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.article-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Two columns: one for info, one for books */
+    gap: 20px; /* Space between columns */
+    margin-bottom: 40px; /* Optional: space between articles */
+    width: 100%; /* Ensure it takes full width */
+    grid-column: span 3; /* Ensure the article wrapper takes up the entire width of the main grid */
+}
+
+.info {
+    text-align: right;
+    border-right: 2px solid #473144;
+    padding-right: 15px;
 }
 
 .books {
-    grid-column: 2;
-    grid-row: 1;
+    text-align: left;
+    word-wrap: break-word; /* Ensure long text wraps inside the container */
+    overflow-wrap: break-word; /* Ensure long words wrap properly */
 }
 
 .books h2 {
     color: #AF1B3F;
+    margin-bottom: 10px;
 }
 
-img {
-    margin-left: 50px;
+.books img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    max-width: 100%; /* Ensure the image doesn't overflow */
 }
 
-.books2 {
-    grid-column: 2;
-    grid-row: 2;
+.books p {
+    line-height: 1.4;
 }
 
-.info2 {
-    grid-column: 1;
-    grid-row: 2;
-    color: #473144;
+.books a {
+    color: #AF1B3F;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.info {
-    grid-column: 1;
-    grid-row: 1;
-    color: #473144;
+.books a:hover {
+    color: #59c3c3;
 }
-    
+
 .filter {
-    grid-column: 3;
-    grid-row: 1;
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
     color: #473144;
 }
 
-#readmore {
-    color: #473144;
-}
-
-#readmore2 {
+#readmore, #readmore2 {
     color: #473144;
 }
 
 header {
-    
     text-align: center;
 }
 
 footer {
     background-color: #ffffff;
     padding: 10px;
-    font-family: (--secondary-font);
+    font-family: var(--secondary-font);
     color: #000000;
 }
 
 .title {
-    font-family: (--secondary-font);
+    font-family: var(--secondary-font);
     color: #473144;
     font-size: 30px;
     margin: 50px;
@@ -81,18 +96,16 @@ footer {
 .subtitle {
     text-align: center;
     font-size: 26px;
-    font-family: (--primary-font);
+    font-family: var(--primary-font);
     color: #AF1B3F;
 }
-
 
 .nav-content {
     border-radius: 5px;
     padding: 10px;
     margin-right: 50px;
     gap: 20px;
-    display: flex !important;
-    flex-direction: row !important; 
+    display: flex; 
     justify-content: right; 
     align-items: right; 
     border-color: #EFC69B;
@@ -104,19 +117,40 @@ footer {
     text-decoration: none;
     margin: 5px 0;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primary-font);
     border-radius: 5px;
 }
+
 .nav-content a:hover {
     color: #59c3c3;
 }
 
 .skiptocontent a {
-	position: absolute;
+    position: absolute;
     top: -50px;
-	left: 0px;
-	background-color: #AF1B3F;
+    left: 0px;
+    background-color: #AF1B3F;
 }
+
 .skiptocontent a:focus {
-	top: 0px;
+    top: 0px;
+}
+
+.info p:first-child {
+    font-size: 1.2rem; 
+    font-weight: bold;
+}
+
+.books p {
+    line-height: 1.4;
+}
+
+.books a {
+    color: #AF1B3F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.books a:hover {
+    color: #59c3c3;
 }
