@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="A collection of favorite recipes for the future!">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A collection of delicious recipes">
+    <meta property="og:image" content="images/recipe-book.png">
+    <meta property="og:url" content="https://example.com/recipe-book">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="main.js" defer></script>
+</head>
+  <body>
+    <header>
+        <img src="images/recipe-book.png" alt="Recipe Book Logo"> 
+        <h1>Recipe Book</h1>
+    </header>
+    
+    <main>
+        <form class="search-form">
+            <input type="text" placeholder="Search for recipes...">
+            <button type="submit">Search</button>
+        </form>
+
+        <section class="recipe">
+            <img src="images/apple-crisp.jpg" alt="Apple Crisp">
+            <div class="recipe-content">
+                <div class="recipe-category">
+                    <h2>Dessert</h2>
+                </div>
+                <div class="recipe-title">
+                    <h1>Apple Crisp</h1>
+                </div>
+                <div class="recipe-rating">
+                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                </div>
+                <div class="recipe-description">
+                    <p>This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <div class="authorize">
+            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        </div>
+    </footer>
+  </body>
+</html>
