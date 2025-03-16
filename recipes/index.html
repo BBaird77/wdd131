@@ -13,19 +13,19 @@
     <meta property="og:image" content="images/recipe-book.png">
     <meta property="og:url" content="https://example.com/recipe-book">
     <meta name="twitter:card" content="summary_large_image">
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js"></script>
 </head>
   <body>
     <header>
         <img src="images/recipe-book.png" alt="Recipe Book Logo"> 
         <h1>Recipe Book</h1>
     </header>
-    
+    <form class="search-form">
+        <input type="text" placeholder="Search for recipes...">
+        <button type="submit">Search</button>
+    </form>
     <main>
-        <form class="search-form">
-            <input type="text" placeholder="Search for recipes...">
-            <button type="submit">Search</button>
-        </form>
+        
 
         <section class="recipe">
             <img src="images/apple-crisp.jpg" alt="Apple Crisp">
