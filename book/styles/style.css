@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Eagle+Lake&family=Italianno&family=Kaushan+Script&family=Merienda:wght@300..900&family=Nothing+You+Could+Do&family=Playball&display=swap');
+
+
+div  {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*background-color: rgb(67, 0, 0);*/
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    padding-top: 10px;
+}
+
+#hero-img {
+    width: 100%
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 70px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    color: #D4AF37;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+#hero-msg2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 400px;
+    color: #D4AF37;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+nav a {
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    padding: 35px;
+  }
+nav a:hover{
+    color: #ffffff;
+    background-color: #C19F32;
+  }
+.home-title{
+    color: #D4AF37;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+    font-family: 'Merienda', sans-serif;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.settitle {
+    color: #228B22;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+    font-family: 'Merienda', sans-serif;
+    font-size: 2.0em;
+    position: absolute;
+    top: 80px;
+    left: 45%;
+}
+#hero-msg h1 {
+    text-align: center;
+  }
+#hero-msg h4 {
+    text-align: center;
+  }
+h2{
+    margin: 0;
+  }
+h4{
+    color: #D4AF37;
+    text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000;
+  }
+.button-box {
+    text-align: center;
+  }
+main section {
+    text-align: center;
+  }
+
+body {
+    height: 100%;
+    margin: 0;
+    /*background-color: #fcfbfb;*/
+    font-family: 'Bebas Neue', Arial, sans-serif ;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:#D4AF37;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+.book, .join {
+    background-color: #D4AF37;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book:hover, .join:hover {
+    background-color:#C19F32;
+    color: #ffffff;
+}
+
+.msg h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Merienda', sans-serif;
+}
+.msg p{
+    color: rgb(0, 0, 0);
+    font-size: .8em;
+    padding-bottom: 15px;
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+footer {
+    background-color: #D4AF37;
+    color: #000000;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    padding:2px;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 1.2em;
+}    
+footer p a:hover {
+    text-decoration: underline;
+}    
+footer .social img {
+    padding-top: 15px;
+}    
+#logo_link {
+    padding-top: 5px;
+} 
+main section img {
+    box-sizing: border-box;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#background {
+    height: 15px;
+    background-color: #D4AF37;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-column: 1/11;
+    grid-row: 3;
+}
+
+.msg {
+    
+    margin-top: 250px;
+    background-color: #D4AF37;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 5/10;
+    grid-row: 4/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.ruins {
+    margin-top: 250px;
+    grid-column: 2/6;
+    grid-row: 5/6;
+}
+
+
+
+.home-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.Avarento {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+.Avarento h2 {
+    font-family: 'Merienda', sans-serif;
+}
+.Avarento p {
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+.Escalia {
+    margin-top: 100px;
+    grid-column: 8/11;
+    grid-row: 4/7;
+}
+.Escalia h2 {
+    font-family: 'Merienda', sans-serif;
+}
+.Escalia p {
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+.Arcadia {
+    grid-column: 8/11;
+    grid-row: 2;
+}
+.Arcadia h2 {
+    font-family: 'Merienda', sans-serif;
+}
+.Arcadia p {
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+.UltimaTerra {
+    grid-column: 4/8;
+    grid-row: 2;
+}
+.UltimaTerra h2 {
+    font-family: 'Merienda', sans-serif;
+}
+.UltimaTerra p {
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+.Raktar {
+    margin-top: 100px;
+    grid-column: 1/4;
+    grid-row: 5/6;
+}
+
+.Raktar2 {
+    margin-top: 100px;
+    grid-column: 4/8;
+    grid-row: 4/7;
+    background-color: #D4AF37;
+    line-height: 1.5em;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.Raktar2 h2 {
+    font-family: 'Merienda', sans-serif;
+}
+.Raktar2 p {
+    font-family: 'Kaushan Script', sans-serif;
+    
+}
+
+/*---------------------------------------------------------*/
+
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #222;
+}
+
+
+
